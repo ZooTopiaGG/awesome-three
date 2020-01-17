@@ -17,9 +17,6 @@ export default class Parallax {
     let x = e.clientX // 取得横坐标
     let y = e.clientY // 取得纵坐标
     // this.step(x, y)
-    console.log((x - this.X) / x)
-    this.X = x
-    this.Y = y
     if (this.scheduledAnimationFrame) {
       return
     }
@@ -29,6 +26,8 @@ export default class Parallax {
       this.scheduledAnimationFrame = false
       this.step(x, y)
     })
+    this.X = x
+    this.Y = y
   }
   step(x, y) {
     let ch = this.props.childrenNode

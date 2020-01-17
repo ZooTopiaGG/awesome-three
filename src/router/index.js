@@ -23,6 +23,12 @@ const routes = [
       import(/* webpackChunkName: "parallax" */ '@/views/parallax.vue')
   },
   {
+    path: '/animate',
+    name: 'animate',
+    component: () =>
+      import(/* webpackChunkName: "animate" */ '@/views/animate.vue')
+  },
+  {
     path: '*',
     redirect: '/'
   }
