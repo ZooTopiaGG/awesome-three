@@ -12,7 +12,7 @@
     "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
     "sass-loader": "^7.1.0",
-    "three": "^0.106.0",
+    "three": "^0.137.0",
     "three.equirectangular-to-cubemap": "^1.1.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6"
